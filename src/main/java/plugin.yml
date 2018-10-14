@@ -1,0 +1,24 @@
+name: TownyAddBlocks
+main: me.noeffort.townyaddblocks.Main
+version: 0.1.5
+
+depends: [Towny]
+softdepend: [Vault]
+description: Buy town blocks.
+author: NoEffort 
+
+commands:
+  buyblocks:
+    aliases: bb
+    description: Buy town blocks for your town.
+    usage: "Usage: /<command> town blocks"
+    permission: towny.buyblocks
+  reloadaddblocks:
+    aliases: rab
+    description: Reloads the configs for the plugn.
+    usage: "Usage: /<command>"
+ 
+permissions:
+  towny.buyblocks:
+    description: Allows the purchase of plots / land.
+    default: true
